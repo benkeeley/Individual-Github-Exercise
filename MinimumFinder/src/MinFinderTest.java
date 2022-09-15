@@ -38,19 +38,73 @@ class MinFinderTest {
 		
 		System.out.println("Actual MinDigit: " + actualMinDigit);
 		
-		assertEquals(expectedMinDigit, actualMinDigit);
-		
 		System.out.println();
+		
+		assertEquals(expectedMinDigit, actualMinDigit);
 	}
 	
-	
+	@Test
 	void testFindMinimumDigit2() {
+		
+		System.out.println("Test2" );
 		
 		int number = 899987;
 		int expectedMinDigit = 7;
 		
-		assertEquals(expectedMinDigit, MinFinder.findMinimumDigit(number));
+		int actualMinDigit =  MinFinder.findMinimumDigit(number);
 		
+		System.out.println("Expected: " + expectedMinDigit + " Actual: " + actualMinDigit);
+		
+		System.out.println();
+		
+		assertEquals(expectedMinDigit, actualMinDigit );
+		
+	}
+	
+	@Test
+	void testFindMinimumCharacter1() {
+		
+		System.out.println("Test3");
+		
+		int stringLength = 5;
+		
+		String string = "";
+		
+		char expectedMinChar = 'z';
+		
+		for(int i = 0; i< stringLength; i++) {
+			char c = (char) ((Math.random() * ('z' - 'a' + 1)) + 'a');
+		
+			if(expectedMinChar > c)
+				expectedMinChar = c;
+			
+			string += c;
+		}
+		
+		char actualMinChar = MinFinder.findMinimumChar(string);
+		
+		System.out.println("For string: " + string + " Expected: " + expectedMinChar + " Actual: " + actualMinChar);
+		
+		System.out.println();
+		
+		assertEquals(expectedMinChar, actualMinChar);
+	}
+	
+	@Test
+	void testFindMinimumCharacter2() {
+		
+		System.out.println("Test4");
+		
+		String s = "Dinosaurs";
+		char expectedMinChar = 'a';
+		
+		char actualMinChar = MinFinder.findMinimumChar(s);
+		
+		System.out.println("Expected: " + expectedMinChar + " Actual: " + actualMinChar);
+		
+		System.out.println();
+		
+		assertEquals(expectedMinChar, actualMinChar);
 	}
 
 }
