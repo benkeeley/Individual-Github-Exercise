@@ -13,13 +13,11 @@ public class Main {
 	    
 	    try { 
 	    int i = Integer.parseInt(s);
-	    
 	    System.out.println("The smallest digit is: " + MinFinder.findMinimumDigit(i));
 	   
 	    }
 	    catch(NumberFormatException e){
-	    	System.out.println("Error " + e.toString() );
-	    	e.printStackTrace();
+	    	System.out.println("The smallest char of " + s + " is " + MinFinder.findMinimumChar(s)) ;
 	    }
 	    
 	    s = scanner.nextLine();

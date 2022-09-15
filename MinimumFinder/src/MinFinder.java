@@ -18,4 +18,19 @@ public class MinFinder {
 		
 		return leastDigit;
 	}
+	
+	public static char findMinimumChar(String s) {
+		
+		char minChar = s.charAt(0);
+		
+		for(int i = 0; i < s.length(); i++) {
+			
+			char currChar = s.charAt(i);
+			
+			if(minChar > currChar)
+				minChar = currChar;
+		}
+		
+		return minChar;
+	}
 }
