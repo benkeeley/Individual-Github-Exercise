@@ -6,6 +6,8 @@ public class Main {
 	System.out.println("Type in an integer or a string");
 	    
 	//This is a comment
+	
+	//Daffodils 
 		
 	    Scanner scanner = new Scanner(System.in);  // Create a Scanner object
 
