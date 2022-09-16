@@ -4,6 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 	System.out.println("Type in an integer or a string");
+	    
+	//This is a comment
 		
 	    Scanner scanner = new Scanner(System.in);  // Create a Scanner object
 
