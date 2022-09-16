@@ -11,3 +11,4 @@ Enter an integer when prompted in the console and the program will return the sm
 ### Feature 3
 
 Enter a string when prompted in the console. The program will find and return the minimum character of the string that was entered.
+ie. entering "hello" will return "e"
