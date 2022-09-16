@@ -2,7 +2,9 @@
 public class MinFinder {
 
 	public static int findMinimumDigit(int i) {
-	
+		
+		//This a comment 2
+		
 		int digit = i % 10;
 		int leastDigit = digit;
 		
@@ -20,6 +22,8 @@ public class MinFinder {
 	}
 	
 	public static char findMinimumChar(String s) {
+		
+		 s = s.toLowerCase();
 		
 		char minChar = s.charAt(0);
 		
